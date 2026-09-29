@@ -5,21 +5,21 @@
 class FreeKiro < Formula
   desc "Spec-driven development workflow CLI (Kiro Spec workflow in Go)"
   homepage "https://github.com/jingyu525/free-kiro"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jingyu525/free-kiro/releases/download/v0.5.0/free-kiro_0.5.0_darwin_amd64.tar.gz"
-      sha256 "54878a7be0f737bf4931217b161557f8f7486217326467ad099045763b616f7f"
+      url "https://github.com/jingyu525/free-kiro/releases/download/v0.6.0/free-kiro_0.6.0_darwin_amd64.tar.gz"
+      sha256 "774a7b4a3f9f4ac69d26a3498e86a05782af4690192b23e91cee97d891e87e13"
 
       define_method(:install) do
         bin.install "free-kiro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jingyu525/free-kiro/releases/download/v0.5.0/free-kiro_0.5.0_darwin_arm64.tar.gz"
-      sha256 "aa5aab9a00aeecdae2db03228414a658e575ed6bf7974410668771a589200428"
+      url "https://github.com/jingyu525/free-kiro/releases/download/v0.6.0/free-kiro_0.6.0_darwin_arm64.tar.gz"
+      sha256 "bf482cb92234dbafe7e5e3c8b97e0510ceafa00d690e3a6eaedc031d6af2b68c"
 
       define_method(:install) do
         bin.install "free-kiro"
@@ -29,15 +29,15 @@ class FreeKiro < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jingyu525/free-kiro/releases/download/v0.5.0/free-kiro_0.5.0_linux_amd64.tar.gz"
-      sha256 "a9c50934fcaffacd7c07e3fd98161250def7ab074e126028ff0b8aecc9031a3f"
+      url "https://github.com/jingyu525/free-kiro/releases/download/v0.6.0/free-kiro_0.6.0_linux_amd64.tar.gz"
+      sha256 "f18e638e03d15d187b15e0eda6869d54cae7ba44d522936fcf42119cfea2ef19"
       define_method(:install) do
         bin.install "free-kiro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jingyu525/free-kiro/releases/download/v0.5.0/free-kiro_0.5.0_linux_arm64.tar.gz"
-      sha256 "9fd49b2b6ecebb525745b0259c78df6abbab1193827770dc78398740155b0cd3"
+      url "https://github.com/jingyu525/free-kiro/releases/download/v0.6.0/free-kiro_0.6.0_linux_arm64.tar.gz"
+      sha256 "713621d1906c28805022ea9f16ac7159607904a000bc32b1b6e59c4338666bce"
       define_method(:install) do
         bin.install "free-kiro"
       end
