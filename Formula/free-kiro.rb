@@ -11,7 +11,7 @@ class FreeKiro < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jingyu525/free-kiro/releases/download/v0.7.1/free-kiro_0.7.1_darwin_amd64.tar.gz"
-      sha256 "1009cf2475292cad2688a14789d6478d30d8bcc2a2db323a55b7a70da7baa105"
+      sha256 "ecc94a0afe19b78143063592b9eee2849b6cc230cc9791af19f466e54cc6279e"
 
       define_method(:install) do
         bin.install "free-kiro"
@@ -19,7 +19,7 @@ class FreeKiro < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/jingyu525/free-kiro/releases/download/v0.7.1/free-kiro_0.7.1_darwin_arm64.tar.gz"
-      sha256 "ee201c739b3091c2e12389ddf694623acb9453984032ab341a81a2008383ff8b"
+      sha256 "e1aa57c1a8ba8f62410d80e16a311897223606eeef5a628f118917913a9373eb"
 
       define_method(:install) do
         bin.install "free-kiro"
@@ -30,14 +30,14 @@ class FreeKiro < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/jingyu525/free-kiro/releases/download/v0.7.1/free-kiro_0.7.1_linux_amd64.tar.gz"
-      sha256 "2756a26d0d39d8e3d948790b7645964a95c438e81c069f169f60d70d4fcf0d0f"
+      sha256 "205ae9de94faf47f0f010e39e67da49082804c1a110c7be87a0696ff0884ff75"
       define_method(:install) do
         bin.install "free-kiro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/jingyu525/free-kiro/releases/download/v0.7.1/free-kiro_0.7.1_linux_arm64.tar.gz"
-      sha256 "6770d1e4d410c9dd3532eea5017e56fc2cab8c12acfa29ee08b9f9e9fa12b357"
+      sha256 "4941709bffbe9ca3607216a2aca6e25d20d4153c9723635968343d3d7ee94b55"
       define_method(:install) do
         bin.install "free-kiro"
       end
